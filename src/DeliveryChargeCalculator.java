@@ -1,3 +1,3 @@
 public interface DeliveryChargeCalculator {
-    int getDeliveryCharge(int weight, int price);
+    int getDeliveryCharge(int price, int weight);
 }
