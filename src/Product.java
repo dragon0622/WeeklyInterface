@@ -1,5 +1,5 @@
 public class Product {
-    String name;
-    int price;
-    int weight;
+    private String name;
+    private int price;
+    private int weight;
 }
