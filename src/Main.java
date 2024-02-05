@@ -1,16 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+        Product beauty = new Beauty("beauty", 30000, 2);
+        Product grocery = new Grocery("grocery", 20000, 3);
+        Product largeAppliance = new LargeAppliance("largeAppliance", 50000, 5);
 
-        Beauty beauty = new Beauty("화장품", 20000, 1);
-        Grocery grocery1 = new Grocery("빵", 15000, 5);
-        Grocery grocery2 = new Grocery("책", 45000, 15);
-        LargeAppliance largeAppliance = new LargeAppliance("냉장고", 250000, 100);
-
-        beauty.Output();
-        grocery1.Output();
-        grocery2.Output();
-        largeAppliance.Output();
-
+        Cart cart = new Cart(new Product[] {beauty, grocery, largeAppliance});
+        int totalDeliveryCharge = cart.calculateDeliveryCharge();
+        System.out.println(totalDeliveryCharge);    // 결과: 9000
     }
 }
 
