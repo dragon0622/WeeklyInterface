@@ -9,4 +9,8 @@ public class MagicNum {
     public static final int DISCOUNT_DELIVERY_FEE_CUT = 30000;
     public static final int DISCOUNT_FEE = 1000;
 
+    static final int BEAUTY_PROMOTION = 10000;
+    static final int GROCERY_PROMOTION = 2000;
+    static final int LARGEAPPLIANCE_PROMOTION = 0;
+
 }
